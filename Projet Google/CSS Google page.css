@@ -1,0 +1,170 @@
+html{
+    height: 100%;
+}
+
+#navigation{
+    display: grid;
+    grid-template-columns: 1fr 60px 80px 50px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail image menu connexion";
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+a:hover{
+    text-decoration: underline;
+}
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#image{
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+#menu{
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 15px;
+}
+#connexion{
+    grid-area: connexion;
+    justify-self: center;
+    align-self: center;
+   background-color: rgb(0, 110, 255);
+   height: 40px;
+   width: 100px;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   line-height: 40px;
+}
+
+#principal{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas:
+    ". logo ."
+    ". recherche ."
+    ". flexbox ."
+}
+
+#logo{
+  grid-area: logo;
+  justify-self: center;  
+  align-self: self-end;
+}
+#recherche{
+    grid-area: recherche; 
+    background-image: url(loupe.png);
+    background-repeat: no-repeat;
+    background-position: center left 5px;
+    background-size: 3%;
+    text-indent: 40px;
+    height: 40px;
+    width: 80%; 
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(170, 170, 170, 0.726);
+    border-radius: 30px;
+}
+#recherche:focus{
+    box-shadow: 1px 1px 1px grey;
+}
+#recherche:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#bouttonrecherche{
+    border: 1px solid rgba(155, 155, 155, 0.301);
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+    margin-right: 25px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+#bouttonchance{
+    border: 1px solid rgba(155, 155, 155, 0.301);
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+#bouttonrecherche:hover{
+    border-color: rgba(65, 65, 65, 0.582);
+
+}
+#bouttonchance:hover{
+    border-color: rgba(65, 65, 65, 0.582);
+
+}
+#footer{
+    display: grid;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    grid-template-columns: 100px 70px 80px 280px 1fr 220px 150px 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "apropos pub entreprise fonctionnement . signaler infoconso confidentialité conditions parametres"
+}
+#apropos{
+    grid-area: apropos;
+    justify-self: center;
+    align-self: center;
+}
+#pub{
+    grid-area: pub;
+    justify-self: center;
+    align-self: center;
+}
+#entreprise{
+    grid-area: entreprise;
+    justify-self: center;
+    align-self: center;
+}
+#fonctionnement{
+    grid-area: fonctionnement;
+    justify-self: center;
+    align-self: center;
+}
+#signaler{
+    grid-area: signaler;
+    justify-self: center;
+    align-self: center;
+}
+#infoconso{
+    grid-area: infoconso;
+    justify-self: center;
+    align-self: center;
+}
+#confidentialite{
+    grid-area: confidentialité;
+    justify-self: center;
+    align-self: center;
+}
+#conditions{
+    grid-area: conditions;
+    justify-self: center;
+    align-self: center;
+}
+#parametres{
+    grid-area: parametres;
+    justify-self: center;
+    align-self: center;
+}
